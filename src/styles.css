@@ -47,7 +47,7 @@ h2 {
 
 p {
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -116,7 +116,7 @@ a {
 }
 
 .sub-section {
-    display: flex;
+    display: ;
     justify-content: space-around;
     padding: 80px;
 }
@@ -136,7 +136,8 @@ a {
 .headshot-container {
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    flex-direction: column;
+   
 }
 
 .skills-container {
@@ -214,5 +215,58 @@ a {
         display: none;
     }
 
+    .headshot-container {
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+        
+    
+    }
+
+    .hero-text h1 {
+        line-height: 1.12;
+        padding-bottom: 15px;
+    }
+
+   
+    .hero-text p {
+        padding-bottom: 10px;
+    }
 }
 
+ @media only screen and (max-width: 514px) {
+   
+   .hero-text {
+    font-size: 20px;
+    margin-bottom: 50px;
+   }
+   
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+       
+    }
+
+   .hero-text h1 {
+    font-size: 80px;
+    margin-right: 80px;
+    line-height: 1.1;
+    padding-bottom: 15px;
+   }
+
+   .hero-text p {
+    margin-right: 85px;
+    padding-bottom: 10px;
+   }
+   
+   .button {
+    margin-left: 45px;
+    
+   }
+ 
+
+}

@@ -13,6 +13,10 @@ footer {
     color: white;
     text-align: center;
     padding: 80px;
+    background-image: url(./images/space.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -66,6 +70,10 @@ a {
     height: 100vh;
     color: white;
     font-size: 40px;
+    background-image: url(./images/eclipse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-area {

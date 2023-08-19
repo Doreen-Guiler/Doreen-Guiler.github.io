@@ -1043,7 +1043,7 @@ a {
         }
     }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 380px) {
 
     .hero-text {
         font-size: 20px;

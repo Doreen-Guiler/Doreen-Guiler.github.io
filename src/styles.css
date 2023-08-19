@@ -1,0 +1,1044 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 20px;
+}
+
+nav a:hover {
+    text-shadow: 2px 2px 10px #ffffff;
+    filter: dropshadow(color=#000000, offx=2, offy=2);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 400px;
+    justify-content: space-around;
+    font-size: 30px;
+    padding-top: 0;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero {
+    background-color: #1c1d25;
+    background-image: url(./images/macbook-pro-apple-event-2020-dark-background-3072x1906-3278.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 40px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 60px;
+    margin-bottom: 200px;
+}
+
+.hero-text a:hover {
+    text-shadow: 2px 2px 10px #ffffff;
+    filter: dropshadow(color=#000000, offx=2, offy=2);
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    background-color: #a63166;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #a63166;
+}
+
+.button:active {
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.socials {
+    padding: 0 60px 200px;
+}
+
+.socials a:hover img {
+    transform: scale(1.2);
+}
+
+.social {
+    margin: 20px;
+}
+
+.logo {
+    height: 125px;
+    margin: 0 25px;
+    padding-bottom: 115px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 180px 0 0 0;
+}
+
+.information {
+    width: 800px;
+    padding-left: 60px;
+}
+
+.skills-container {
+    justify-content: space-around;
+    padding-left: 50px;
+    width: 980px;
+}
+
+.skills-container img {
+    padding: 20px;
+    object-fit: contain;
+}
+
+.skills-container img:hover {
+    transform: scale(1.2);
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    /*padding: 80px;*/
+}
+
+.sub-section-alternative h2 {
+    padding: 50px 0 80px 0;
+}
+
+.sub-section-alternative h3 {
+    padding: 25px;
+}
+
+.purpose {
+    font-size: 20px;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px #a63166;
+   
+    /*margin: 10px;*/
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+
+}
+
+.project-image {
+    margin-top: 0;
+    width: 300px;
+}
+
+.project-card a:hover img {
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+.footer {
+    height: 900px;
+}
+
+.login-box {
+    position: absolute;
+    top: 310%;
+    left: 50%;
+    width: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px #a63166;
+    border-radius: 10px;
+}
+  
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input, 
+.user-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.textarea textarea:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.textarea textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #a63166;
+    font-size: 12px;
+}
+  
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #a63166;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+  
+.login-box a:hover {
+    background: #a63166;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #a63166,
+                0 0 25px #a63166,
+                0 0 50px #a63166,
+                0 0 100px #a63166;
+}
+  
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+  
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a63166);
+    animation: btn-anim1 1s linear infinite;
+}
+  
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+}
+  
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #a63166);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+  
+@keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+}
+  
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #a63166);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+  
+@keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+}
+  
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #a63166);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+  
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+}
+  
+@media only screen and (max-width: 1880px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .login-box {
+        position: absolute;
+        top: 450%;
+    }
+}
+
+@media only screen and (max-width: 1536px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .login-box {
+        position: absolute;
+        top: 460%;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .login-box {
+        position: absolute;
+        top: 580%;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1215px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .login-box {
+        position: absolute;
+        top: 600%;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hero-text h1 {
+        line-height: 1.12;
+        padding-bottom: 15px;
+    }
+
+
+    .hero-text p {
+        padding-bottom: 10px;
+    }
+
+    
+    .login-box {
+        position: absolute;
+        top: 600%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+}
+
+@media only screen and (max-width: 995px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .login-box {
+        position: absolute;
+        top: 640%;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 70px;
+        margin-right: 70px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 75px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 185px;
+        }
+
+    .sub-section {
+        padding-left: 30px;
+    }
+    
+    .sub-section-alternative {
+        padding-top: 100px;
+    }
+
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+    
+    .information {
+        padding-left: 20px;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    .hubspot {
+        width: 200px;
+    }
+    
+    .login-box {
+        position: absolute;
+        top: 650%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+}
+
+@media only screen and (max-width: 856px) {
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 70px;
+        margin-right: 70px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 75px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 185px;
+        }
+
+    .sub-section {
+        padding-left: 30px;
+    }
+    
+    .sub-section-alternative {
+        padding-top: 100px;
+    }
+
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+    
+    .information {
+        padding-left: 20px;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    .hubspot {
+        width: 200px;
+    }
+    
+    .login-box {
+        position: absolute;
+        top: 670%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 70px;
+        margin-right: 70px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 75px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 185px;
+        }
+    
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+    
+    .information {
+        padding-left: 20px;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    .hubspot {
+        width: 200px;
+    }
+    
+    .login-box {
+        position: absolute;
+        top: 660%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+}
+
+
+@media only screen and (max-width: 705px) {
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 70px;
+        margin-right: 70px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 75px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 185px;
+        }
+    
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+    
+    .information {
+        padding-left: 20px;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hubspot {
+        width: 200px;
+    }
+    
+    .login-box {
+        position: absolute;
+        top: 760%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+    }
+
+
+@media only screen and (max-width: 615px) {
+
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 50px;
+        margin-right: 80px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 85px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 95px;
+        }
+
+    .login-box {
+        position: absolute;
+        top: 960%;
+        }
+
+    .login-box h2 {
+        font-size: 40px;
+        }
+
+    .skills-container {
+        text-align: center;
+        }
+
+    .information {
+        padding-left: 20px;
+        }
+
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 70px;
+        margin-right: 70px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 75px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 185px;
+        }
+    
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+    
+    .information {
+        padding-left: 20px;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
+        }
+    
+    .hubspot {
+        width: 200px;
+        }
+    
+    .login-box {
+        position: absolute;
+        top: 960%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+
+.hero-text {
+    font-size: 20px;
+    margin-bottom: 50px;
+    }
+
+.hero-area {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px; 
+    }
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-right: 80px;
+    line-height: 1.1;
+    padding-bottom: 15px;
+    }
+
+.hero-text p {
+    margin-right: 85px;
+    padding-bottom: 10px;
+    }
+
+.button {
+    margin-left: 95px;
+    }
+
+.sub-section-alternative h2 {
+    text-align: center;
+    }
+
+.information {
+    padding-left: 20px;
+    }
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.hubspot {
+    width: 200px;
+    }
+
+.login-box {
+    position: absolute;
+    top: 960%;
+    }
+
+.login-box h2 {
+    font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+
+    .hero-text {
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+    .hero-area {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px; 
+        }
+    
+    .hero-text h1 {
+        font-size: 50px;
+        margin-right: 80px;
+        line-height: 1.1;
+        padding-bottom: 15px;
+        }
+    
+    .hero-text p {
+        margin-right: 85px;
+        padding-bottom: 10px;
+        }
+    
+    .button {
+        margin-left: 95px;
+        }
+    
+    .sub-section-alternative h2 {
+        text-align: center;
+        }
+    
+    .information {
+        padding-left: 20px;
+        }
+    
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+    .hubspot {
+        width: 200px;
+        }
+    
+    .login-box {
+        position: absolute;
+        top: 750%;
+        }
+    
+    .login-box h2 {
+        font-size: 40px;
+        }
+    }

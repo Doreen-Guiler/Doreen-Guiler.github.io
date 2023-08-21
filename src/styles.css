@@ -362,7 +362,7 @@ a {
     }
 }
   
-@media only screen and (max-width: 1880px) {
+@media only screen and (max-width: 3000px) {
     .project-container {
         display: flex;
         flex-wrap: wrap;
@@ -375,7 +375,12 @@ a {
 
     .login-box {
         position: absolute;
-        top: 450%;
+        top: 365%;
+    }
+
+    .skills-container, h2 {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -1043,61 +1048,121 @@ a {
         }
     }
 
-@media only screen and (max-width: 393px) {
+    @media only screen and (max-width: 393px) {
 
-    .hero-text {
-        font-size: 20px;
-        margin-bottom: 50px;
-        }
-    
-    .hero-area {
+        .hero-text {
+            font-size: 20px;
+            margin-bottom: 50px;
+            }
         
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 20px; 
+        .hero-area {
+            
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 20px; 
+            }
+        
+        .hero-text h1 {
+            font-size: 50px;
+            margin-right: 80px;
+            line-height: 1.1;
+            padding-bottom: 15px;
+            }
+        
+        .hero-text p {
+            margin-right: 85px;
+            padding-bottom: 10px;
+            }
+        
+        .button {
+            margin-left: 95px;
+            }
+        
+        .sub-section-alternative h2 {
+            text-align: center;
+            }
+        
+        .information {
+            padding-left: 20px;
+            }
+        
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        
+        .hubspot {
+            width: 200px;
+            }
+        
+        .login-box {
+            position: absolute;
+            top: 850%;
+            }
+        
+        .login-box h2 {
+            font-size: 40px;
+            }
         }
-    
-    .hero-text h1 {
-        font-size: 50px;
-        margin-right: 80px;
-        line-height: 1.1;
-        padding-bottom: 15px;
-        }
-    
-    .hero-text p {
-        margin-right: 85px;
-        padding-bottom: 10px;
-        }
-    
-    .button {
-        margin-left: 95px;
-        }
-    
-    .sub-section-alternative h2 {
-        text-align: center;
-        }
-    
-    .information {
-        padding-left: 20px;
-        }
-    
-    .skills-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-    
-    .hubspot {
-        width: 200px;
-        }
-    
-    .login-box {
-        position: absolute;
-        top: 950%;
-        }
-    
-    .login-box h2 {
-        font-size: 40px;
-        }
-    }
+
+        @media only screen and (max-width: 375px) {
+
+            .hero-text {
+                font-size: 20px;
+                margin-bottom: 50px;
+                }
+            
+            .hero-area {
+                
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 20px; 
+                }
+            
+            .hero-text h1 {
+                font-size: 50px;
+                margin-right: 80px;
+                line-height: 1.1;
+                padding-bottom: 15px;
+                }
+            
+            .hero-text p {
+                margin-right: 85px;
+                padding-bottom: 10px;
+                }
+            
+            .button {
+                margin-left: 95px;
+                }
+            
+            .sub-section-alternative h2 {
+                text-align: center;
+                }
+            
+            .information {
+                padding-left: 20px;
+                }
+            
+            .skills-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+            
+            .hubspot {
+                width: 200px;
+                }
+            
+            .login-box {
+                position: absolute;
+                top: 950%;
+                }
+            
+            .login-box h2 {
+                font-size: 40px;
+                }
+                
+            }
